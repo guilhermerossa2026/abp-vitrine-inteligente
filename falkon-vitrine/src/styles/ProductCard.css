@@ -1,0 +1,104 @@
+.product-card {
+  background-color: #151d30;
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  border-color: #00f2fe;
+}
+
+/* CSS Dinâmico: Destaca os itens em promoção com borda neon vermelha */
+.product-card.em-promocao {
+  border: 2px solid #ff3838;
+  box-shadow: 0 0 10px rgba(255, 56, 56, 0.2);
+}
+
+.badge-promo {
+  position: absolute;
+  top: -12px;
+  left: 15px;
+  background: linear-gradient(135deg, #ff0844 0%, #ffb199 100%);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.product-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #f3f4f6;
+}
+
+.product-description {
+  font-size: 0.875rem;
+  color: #9ca3af;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.product-meta {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+  align-items: center;
+}
+
+.category-tag {
+  background-color: #1e293b;
+  color: #00f2fe;
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.rating {
+  font-size: 0.85rem;
+  color: #fbc531;
+}
+
+.product-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.product-price {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.buy-button {
+  background-color: #00f2fe;
+  color: #0b0f19;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.buy-button:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.buy-button:disabled {
+  background-color: #374151;
+  color: #9ca3af;
+  cursor: not-allowed;
+}
