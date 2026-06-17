@@ -15,7 +15,6 @@
   border-color: #00f2fe;
 }
 
-/* CSS Dinâmico: Destaca os itens em promoção com borda neon vermelha */
 .product-card.em-promocao {
   border: 2px solid #ff3838;
   box-shadow: 0 0 10px rgba(255, 56, 56, 0.2);
