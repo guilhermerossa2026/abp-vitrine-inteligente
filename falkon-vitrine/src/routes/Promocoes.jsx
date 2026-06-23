@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useProductFilter } from '../hooks/useProductFilter';
-import { ProductCard } from '../components/ProductCard';
+import { ProductCard } from '../components/ProductCard.jsx';
 import '../styles/global.css';
 
 export function Promocoes() {
@@ -17,8 +17,8 @@ export function Promocoes() {
 
   return (
     <div className="page-container" style={{ padding: '20px' }}>
-      <div style={{ marginBottom: '2rem', borderLeft: '4px solid var(--promo-color)', paddingLeft: '15px' }}>
-        <h1 style={{ fontSize: '2rem', color: '#fff' }}>🔥 Achados Falkon: Limpa Estoque</h1>
+      <div style={{ marginBottom: '2rem' }}>
+        <h1 style={{ fontSize: '2rem', color: '#fff' }}>Achados Falkon: Limpa Estoque</h1>
         <p style={{ color: 'var(--text-muted)' }}>Oportunidades únicas sem perda de tempo de rolagem infinita.</p>
       </div>
 

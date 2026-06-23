@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import { HomeBusca } from './routes/HomeBusca';
 import { Promocoes } from './routes/Promocoes';
@@ -11,10 +10,10 @@ export default function App() {
           <h1 style={{ color: '#fff', fontSize: '1.5rem', margin: 0 }}>Falkon<span style={{ color: '#00f2fe' }}>.tech</span></h1>
           <nav>
             <Link to="/" style={{ color: '#fff', marginRight: '20px', textDecoration: 'none', fontWeight: '600' }}>
-              🔍 Vitrine de Busca
+               Vitrine de Busca
             </Link>
             <Link to="/promocoes" style={{ color: '#ff3838', textDecoration: 'none', fontWeight: '700' }}>
-              🔥 Central de Promoções
+               Central de Promoções
             </Link>
           </nav>
         </div>

@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useProductFilter } from '../hooks/useProductFilter';
-import { ProductCard } from '../components/ProductCard';
+import { ProductCard } from '../components/ProductCard.jsx';
 import '../styles/global.css';
 
 export function HomeBusca() {
@@ -26,7 +26,7 @@ export function HomeBusca() {
   return (
     <div className="page-container" style={{ padding: '20px' }}>
       <div style={{ marginBottom: '2rem' }}>
-        <h2>🔍 Vitrine Inteligente Falkon</h2>
+        <h2> Vitrine Inteligente Falkon</h2>
         <p style={{ color: 'var(--text-muted)' }}>Filtre o inventário em tempo real com agilidade.</p>
       </div>
       

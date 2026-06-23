@@ -1,40 +1,37 @@
-import React from 'react';
 import '../styles/ProductCard.css';
 
 export function ProductCard({ produto }) {
-  const valorDesconto = produto.preco > 200 ? '25% OFF' : '10% OFF';
-
   return (
-    <div className={`product-card ${produto.promocao ? 'em-promocao' : ''}`}>
+    <div className="product-card">
       
       {produto.promocao && (
-        <span className="badge-promo">
-          🚀 OPORTUNIDADE ÚNICA - {valorDesconto}
+        <span className="promo">
+          Promoção
         </span>
       )}
-      
-      <div className="product-body">
-        <h3 className="product-title">{produto.nome}</h3>
-        <p className="product-description">{produto.descricao}</p>
-        
-        <div className="product-meta">
-          <span className="category-tag">{produto.categoria}</span>
-          <span className="rating">⭐ {produto.nota}</span>
-        </div>
+
+      <h3>{produto.nome}</h3>
+
+      <p>{produto.descricao}</p>
+
+      <div className="info">
+        <span>{produto.categoria}</span>
+        <span>⭐ {produto.nota}</span>
       </div>
 
-      <div className="product-footer">
-        <span className="product-price">
+      <div className="footer">
+        <span>
           {produto.preco.toLocaleString('pt-BR', {
             style: 'currency',
             currency: 'BRL',
           })}
         </span>
-        
-        <button className="buy-button" disabled={produto.estoque === 0}>
-          {produto.estoque > 0 ? 'Garantir item' : 'Esgotado'}
+
+        <button disabled={produto.estoque === 0}>
+          {produto.estoque > 0 ? 'Comprar' : 'Sem estoque'}
         </button>
       </div>
+
     </div>
   );
 }
